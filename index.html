@@ -235,68 +235,6 @@
 </li>
 </ul>
 <p>要获取页面上这个id为imooc的div元素，然后给这个文本节点增加一段文字：“您好！通过慕课网学习jQuery才是最佳的途径”，并且让文字颜色变成红色。</p>
-<ul>
-<li>普通处理，通过标准JavaScript处理：  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> p = <span class="built_in">document</span>.getElementById(<span class="string">'imooc'</span>);</span><br><span class="line">p.innerHTML = <span class="string">'您好！通过慕课网学习jQuery才是最佳的途径'</span>;</span><br><span class="line">p.style.color = <span class="string">'red'</span>;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>通过原生DOM模型提供的document.getElementById(“imooc”) 方法获取的DOM元素就是一个DOM对象，再通过innerHTML与style属性处理文本与颜色。</p>
-<ul>
-<li>jQuery的处理：  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $p = $(<span class="string">'#imooc'</span>);</span><br><span class="line">$p.html(<span class="string">'您好！通过慕课网学习jQuery才是最佳的途径'</span>).css(<span class="string">'color'</span>,<span class="string">'red'</span>);</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>通过\$(‘#imooc’)方法会得到一个\$p的jQuery对象\$p是一个类数组对象。这个对象里面包含了DOM对象的信息，然后封装了很多操作方法，调用自己的方法html与css，得到的效果与标准的JavaScript处理结果是一致的。</p>
-<ul>
-<li>通过jQuery方法包装后的对象，是一个类数组对象。它与DOM对象完全不同，唯一相似的是它们都能操作DOM。</li>
-</ul>
-<h4 id="jQuery_u5BF9_u8C61_u8F6C_u5316_u4E3ADOM_u5BF9_u8C61"><a href="#jQuery_u5BF9_u8C61_u8F6C_u5316_u4E3ADOM_u5BF9_u8C61" class="headerlink" title="jQuery对象转化为DOM对象"></a><strong>jQuery对象转化为DOM对象</strong></h4><ul>
-<li><p>jQuery库本质上还是JavaScript代码，使用jQuery的同时也能混合JavaScript原生代码一起使用。jQuery是一个类数组对象，而DOM对象就是一个单独的DOM元素。</p>
-</li>
-<li><p>如何把jQuery对象转成DOM对象？</p>
-<ul>
-<li><p>利用数组下标的方式读取到jQuery中的DOM对象</p>
-</li>
-<li><p><em>HTML代码</em></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span>元素一<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span>元素二<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span>元素三<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><em>JavaScript代码</em></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $div = $(<span class="string">'div'</span>) <span class="comment">//jQuery对象</span></span><br><span class="line"><span class="keyword">var</span> div = $div[<span class="number">0</span>] <span class="comment">//转化成DOM对象</span></span><br><span class="line">div.style.color = <span class="string">'red'</span> <span class="comment">//操作dom对象的属性</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<p>用jQuery找到所有的div元素（3个），因为jQuery对象也是一个数组结构，可以通过数组下标索引找到第一个div元素，通过返回的div对象，调用它的style属性修改第一个div元素的颜色。这里需要注意的一点是，数组的索引是从0开始的，也就是第一个元素下标是0</p>
-<ul>
-<li><p>通过jQuery自带的get()方法</p>
-<ul>
-<li><p>jQuery对象自身提供一个.get()方法允许我们直接访问jQuery对象中相关的DOM节点，get方法中提供一个元素的索引：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $div = $(<span class="string">'div'</span>) <span class="comment">//jQuery对象</span></span><br><span class="line"><span class="keyword">var</span> div = $div.get(<span class="number">0</span>) <span class="comment">//通过get方法，转化成DOM对象</span></span><br><span class="line">div.style.color = <span class="string">'red'</span> <span class="comment">//操作dom对象的属性</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>get方法就是利用的第一种方式处理的，只是包装成一个get让开发者更直接方便的使用。</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="DOM_u5BF9_u8C61_u8F6C_u5316_u4E3AjQuery_u5BF9_u8C61"><a href="#DOM_u5BF9_u8C61_u8F6C_u5316_u4E3AjQuery_u5BF9_u8C61" class="headerlink" title="DOM对象转化为jQuery对象"></a><strong>DOM对象转化为jQuery对象</strong></h4><ul>
-<li><p>开发中更多的情况是把一个dom对象加工成jQuery对象。</p>
-<ul>
-<li>(参数) 是一个多功能的方法，通过传递不同的参数而产生不同的作用。</li>
-</ul>
-</li>
-<li><p>如果传递给$(DOM)函数的参数是一个DOM对象，jQuery方法会把这个DOM对象给包装成一个新的jQuery对象  </p>
-<ul>
-<li><p>通过$(dom)方法将普通的dom对象加工成jQuery对象之后，我们就可以调用jQuery的方法了</p>
-</li>
-<li><p><em>HTML代码</em></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span>元素一<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span>元素二<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span>元素三<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><em>JavaScript代码</em></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'div'</span>); <span class="comment">//dom对象</span></span><br><span class="line"><span class="keyword">var</span> $div = $(div); <span class="comment">//jQuery对象</span></span><br><span class="line"><span class="keyword">var</span> $first = $div.first(); <span class="comment">//找到第一个div元素</span></span><br><span class="line">$first.css(<span class="string">'color'</span>, <span class="string">'red'</span>); <span class="comment">//给第一个元素设置颜色</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<p>通过getElementsByTagName获取到所有div节点的元素，结果是一个dom合集对象，不过这个对象是一个数组合集(3个div元素)。<br>通过\$(div)方法转化成jQuery对象，通过调用jQuery对象中的first与css方法查找第一个元素并且改变其颜色。</p>
-
       
     </div>
     
@@ -309,6 +247,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/10/30/jQuery学习小记/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
