@@ -5,22 +5,30 @@
   
   <title>jQuery学习小记(二) - jQuery选择器 | Nirvana-M</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ID选择器id选择器：一个用来查找的ID，即元素的id属性$( &amp;quot;#id&amp;quot; )
+  <meta name="description" content="ID选择器id选择器：一个用来查找的ID，即元素的id属性    1$( &quot;#id&quot; )
 id选择器也是基本的选择器，jQuery内部使用JavaScript函数document.getElementById()来处理ID的获取。原生语法的支持总是非常高效的，所以在操作DOM的获取上，如果能采用id的话尽然考虑用这个选择器注意：
-id是唯一的，每个id值在一个页面中只能使用一次。如果多个">
+id是唯一的，每个id值在一个页面中只能使用一次。如果多个元素分配了">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery学习小记(二) - jQuery选择器">
 <meta property="og:url" content="http://nirvana-m.github.io/2016/10/31/jQuery/index.html">
 <meta property="og:site_name" content="Nirvana-M">
-<meta property="og:description" content="ID选择器id选择器：一个用来查找的ID，即元素的id属性$( &amp;quot;#id&amp;quot; )
+<meta property="og:description" content="ID选择器id选择器：一个用来查找的ID，即元素的id属性    1$( &quot;#id&quot; )
 id选择器也是基本的选择器，jQuery内部使用JavaScript函数document.getElementById()来处理ID的获取。原生语法的支持总是非常高效的，所以在操作DOM的获取上，如果能采用id的话尽然考虑用这个选择器注意：
-id是唯一的，每个id值在一个页面中只能使用一次。如果多个">
-<meta property="og:updated_time" content="2016-10-31T10:53:48.380Z">
+id是唯一的，每个id值在一个页面中只能使用一次。如果多个元素分配了">
+<meta property="og:image" content="http://img.mukewang.com/5590e98b0001f60d06130229.jpg">
+<meta property="og:image" content="http://img.mukewang.com/57cd1df2000146de06020498.jpg">
+<meta property="og:image" content="http://img.mukewang.com/57cd20bf0001a97f05290214.jpg">
+<meta property="og:image" content="http://img.mukewang.com/5590f6de0001e2b204460106.jpg">
+<meta property="og:image" content="http://img.mukewang.com/57d654200001c46507360560.jpg">
+<meta property="og:image" content="http://img.mukewang.com/559105da0001301105960331.jpg">
+<meta property="og:image" content="http://img.mukewang.com/5592040d0001f8eb04940441.jpg">
+<meta property="og:image" content="http://img.imooc.com/55920c2f0001198b04940201.jpg">
+<meta property="og:updated_time" content="2016-10-31T11:22:17.014Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery学习小记(二) - jQuery选择器">
-<meta name="twitter:description" content="ID选择器id选择器：一个用来查找的ID，即元素的id属性$( &amp;quot;#id&amp;quot; )
+<meta name="twitter:description" content="ID选择器id选择器：一个用来查找的ID，即元素的id属性    1$( &quot;#id&quot; )
 id选择器也是基本的选择器，jQuery内部使用JavaScript函数document.getElementById()来处理ID的获取。原生语法的支持总是非常高效的，所以在操作DOM的获取上，如果能采用id的话尽然考虑用这个选择器注意：
-id是唯一的，每个id值在一个页面中只能使用一次。如果多个">
+id是唯一的，每个id值在一个页面中只能使用一次。如果多个元素分配了">
   
     <link rel="alternative" href="/atom.xml" title="Nirvana-M" type="application/atom+xml">
   
@@ -125,7 +133,7 @@ id是唯一的，每个id值在一个页面中只能使用一次。如果多个"
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/人生/" style="font-size: 10px;">人生</a> <a href="/tags/闲碎/" style="font-size: 10px;">闲碎</a>
+						<a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/jQuery/" style="font-size: 20px;">jQuery</a> <a href="/tags/人生/" style="font-size: 10px;">人生</a> <a href="/tags/闲碎/" style="font-size: 10px;">闲碎</a>
 					</div>
 				</section>
 				
@@ -234,6 +242,10 @@ id是唯一的，每个id值在一个页面中只能使用一次。如果多个"
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li></ul>
+	</div>
+
         
 
         <div class="clearfix"></div>
@@ -242,28 +254,25 @@ id是唯一的，每个id值在一个页面中只能使用一次。如果多个"
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="ID_u9009_u62E9_u5668"><a href="#ID_u9009_u62E9_u5668" class="headerlink" title="ID选择器"></a>ID选择器</h4><h5 id="id_u9009_u62E9_u5668_uFF1A_u4E00_u4E2A_u7528_u6765_u67E5_u627E_u7684ID_uFF0C_u5373_u5143_u7D20_u7684id_u5C5E_u6027"><a href="#id_u9009_u62E9_u5668_uFF1A_u4E00_u4E2A_u7528_u6765_u67E5_u627E_u7684ID_uFF0C_u5373_u5143_u7D20_u7684id_u5C5E_u6027" class="headerlink" title="id选择器：一个用来查找的ID，即元素的id属性"></a>id选择器：一个用来查找的ID，即元素的id属性</h5><pre><code>$( &quot;#id&quot; )
-</code></pre><p>id选择器也是基本的选择器，jQuery内部使用JavaScript函数document.getElementById()来处理ID的获取。原生语法的支持总是非常高效的，所以在操作DOM的获取上，如果能采用id的话尽然考虑用这个选择器<br><strong>注意：</strong></p>
+        <h4 id="ID_u9009_u62E9_u5668"><a href="#ID_u9009_u62E9_u5668" class="headerlink" title="ID选择器"></a><strong>ID选择器</strong></h4><p><strong>id选择器：一个用来查找的ID，即元素的id属性</strong><br>    <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$(</span> <span class="string">"#id"</span> )</span><br></pre></td></tr></table></figure></p>
+<p>id选择器也是基本的选择器，jQuery内部使用JavaScript函数document.getElementById()来处理ID的获取。原生语法的支持总是非常高效的，所以在操作DOM的获取上，如果能采用id的话尽然考虑用这个选择器<br><strong>注意：</strong></p>
 <p>id是唯一的，每个id值在一个页面中只能使用一次。如果多个元素分配了相同的id，将只匹配该id选择集合的第一个DOM元素。但这种行为不应该发生;有超过一个元素的页面使用相同的id是无效的</p>
-<h4 id="u7C7B_u9009_u62E9_u5668"><a href="#u7C7B_u9009_u62E9_u5668" class="headerlink" title="类选择器"></a>类选择器</h4><h5 id="u7C7B_u9009_u62E9_u5668_uFF1A_u901A_u8FC7class_u6837_u5F0F_u7C7B_u540D_u6765_u83B7_u53D6_u8282_u70B9"><a href="#u7C7B_u9009_u62E9_u5668_uFF1A_u901A_u8FC7class_u6837_u5F0F_u7C7B_u540D_u6765_u83B7_u53D6_u8282_u70B9" class="headerlink" title="类选择器：通过class样式类名来获取节点"></a>类选择器：通过class样式类名来获取节点</h5><pre><code>$( &quot;.class&quot; )
-</code></pre><ul>
+<a id="more"></a>
+<h4 id="u7C7B_u9009_u62E9_u5668"><a href="#u7C7B_u9009_u62E9_u5668" class="headerlink" title="类选择器"></a><strong>类选择器</strong></h4><p><strong>类选择器：通过class样式类名来获取节点</strong><br>    <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$(</span> <span class="string">".class"</span> )</span><br></pre></td></tr></table></figure></p>
+<ul>
 <li>相对id选择器来说，效率相对低一点，但是优势就是可以多选</li>
 <li>同样的jQuery在实现上，对于类选择器，如果浏览器支持，jQuery使用JavaScript的原生getElementsByClassName()函数来实现的</li>
 <li>jQuery除了选择上的简单，而且没有再次使用循环处理，所以使用jQuery选择节点，不仅仅只是选择上的简单，同时还增加很多关联的便利操作，后续我们还会慢慢的学到其他的优势。</li>
 </ul>
-<h4 id="u5143_u7D20_u9009_u62E9_u5668"><a href="#u5143_u7D20_u9009_u62E9_u5668" class="headerlink" title="元素选择器"></a>元素选择器</h4><ul>
+<h4 id="u5143_u7D20_u9009_u62E9_u5668"><a href="#u5143_u7D20_u9009_u62E9_u5668" class="headerlink" title="元素选择器"></a><strong>元素选择器</strong></h4><ul>
 <li><p>元素选择器：根据给定（html）标记名称选择所有的元素</p>
-<p>  $( “element” )</p>
+  <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$(</span> <span class="string">"element"</span> )</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>搜索指定元素标签名的所有节点，这个是一个合集的操作。同样的也有原生方法getElementsByTagName()函数支持</p>
 </li>
 </ul>
-<h4 id="jQuery_u9009_u62E9_u5668_u4E4B_u5168_u9009_u62E9_u5668_uFF08*_u9009_u62E9_u5668_uFF09"><a href="#jQuery_u9009_u62E9_u5668_u4E4B_u5168_u9009_u62E9_u5668_uFF08*_u9009_u62E9_u5668_uFF09" class="headerlink" title="jQuery选择器之全选择器（*选择器）"></a>jQuery选择器之全选择器（*选择器）</h4><p>在CSS中，经常会在第一行写下这样一段样式</p>
-<pre><code>* {padding: 0; margin: 0;}
-</code></pre><p>通配符*意味着给所有的元素设置默认的边距。jQuery中我们也可以通过传递*选择器来选中文档页面中的元素</p>
-<ul>
-<li>$( “*” )</li>
-</ul>
+<h4 id="jQuery_u9009_u62E9_u5668_u4E4B_u5168_u9009_u62E9_u5668_uFF08*_u9009_u62E9_u5668_uFF09"><a href="#jQuery_u9009_u62E9_u5668_u4E4B_u5168_u9009_u62E9_u5668_uFF08*_u9009_u62E9_u5668_uFF09" class="headerlink" title="jQuery选择器之全选择器（*选择器）"></a><strong>jQuery选择器之全选择器（*选择器）</strong></h4><p>在CSS中，经常会在第一行写下这样一段样式<br>    <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* <span class="rules">&#123;<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>; <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>通配符*意味着给所有的元素设置默认的边距。jQuery中我们也可以通过传递*选择器来选中文档页面中的元素<br>    <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* <span class="variable">$(</span> <span class="string">"*"</span> )</span><br></pre></td></tr></table></figure></p>
 <p>抛开jQuery，如果要获取文档中所有的元素，通过document.getElementsByTagName()中传递”*”同样可以获取到</p>
 <ul>
 <li>id、class、tag都可以通过原生的方法获取到对应的节点，但是还需要考虑一个兼容性的问题，比如:<ul>
@@ -274,13 +283,11 @@ id是唯一的，每个id值在一个页面中只能使用一次。如果多个"
 </ul>
 </li>
 </ul>
-<h4 id="u5C42_u7EA7_u9009_u62E9_u5668"><a href="#u5C42_u7EA7_u9009_u62E9_u5668" class="headerlink" title="层级选择器"></a>层级选择器</h4><ul>
+<h4 id="u5C42_u7EA7_u9009_u62E9_u5668"><a href="#u5C42_u7EA7_u9009_u62E9_u5668" class="headerlink" title="层级选择器"></a><strong>层级选择器</strong></h4><ul>
 <li>选择器中的层级选择器用来处理节点树间的关系</li>
 <li>子元素 后代元素 兄弟元素 相邻元素</li>
-<li><p>通过一个列表，对比层级选择器的区别</p>
-</li>
-<li><p>仔细观察层级选择器之间还是有很多相似与不同点</p>
-<ul>
+<li>通过一个列表，对比层级选择器的区别<br><img src="http://img.mukewang.com/5590e98b0001f60d06130229.jpg" alt=""></li>
+<li>仔细观察层级选择器之间还是有很多相似与不同点<ul>
 <li>层级选择器都有一个参考节点</li>
 <li>后代选择器包含子选择器的选择的内容</li>
 <li>一般兄弟选择器包含相邻兄弟选择的内容</li>
@@ -288,32 +295,32 @@ id是唯一的，每个id值在一个页面中只能使用一次。如果多个"
 </ul>
 </li>
 </ul>
-<h4 id="u57FA_u672C_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u57FA_u672C_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="基本筛选选择器"></a>基本筛选选择器</h4><ul>
+<h4 id="u57FA_u672C_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u57FA_u672C_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="基本筛选选择器"></a><strong>基本筛选选择器</strong></h4><ul>
 <li><p>很多时候我们不能直接通过基本选择器与层级选择器找到我们想要的元素，为此jQuery提供了一系列的筛选选择器用来更快捷的找到所需的DOM元素。筛选选择器很多都不是CSS的规范，而是jQuery自己为了开发者的便利延展出来的选择器</p>
 </li>
-<li><p>筛选选择器的用法与CSS中的伪元素相似，选择器用冒号“：”开头，通过一个列表，看看基本筛选器的描述：</p>
+<li><p>筛选选择器的用法与CSS中的伪元素相似，选择器用冒号“：”开头，通过一个列表，看看基本筛选器的描述：<br><img src="http://img.mukewang.com/57cd1df2000146de06020498.jpg" alt=""></p>
 </li>
 <li><p>注意事项：</p>
 <ul>
 <li>:eq(), :lt(), :gt(), :even, :odd用来筛选他们前面的匹配表达式的集合元素，根据之前匹配的元素进一步筛选，注意jQuery合集都是从0开始索引</li>
-<li>gt是一个段落筛选，从指定索引的下一个开始，gt(1) 实际从2开始<h4 id="u5185_u5BB9_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u5185_u5BB9_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="内容筛选选择器"></a>内容筛选选择器</h4></li>
+<li>gt是一个段落筛选，从指定索引的下一个开始，gt(1) 实际从2开始</li>
 </ul>
 </li>
+</ul>
+<h4 id="u5185_u5BB9_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u5185_u5BB9_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="内容筛选选择器"></a><strong>内容筛选选择器</strong></h4><ul>
 <li>基本筛选选择器针对的都是元素DOM节点，如果要通过内容来过滤，jQuery也提供了一组内容筛选选择器，当然其规则也会体现在它所包含的子元素或者文本内容上</li>
-<li><p>内容过滤器描述如下表：</p>
-</li>
-<li><p>注意事项：</p>
-<ul>
+<li>内容过滤器描述如下表：<br><img src="http://img.mukewang.com/57cd20bf0001a97f05290214.jpg" alt=""></li>
+<li>注意事项：<ul>
 <li>:contains与:has都有查找的意思，但是contains查找包含“指定文本”的元素，has查找包含“指定元素”的元素</li>
 <li>如果:contains匹配的文本包含在元素的子元素中，同样认为是符合条件的。</li>
-<li>:parent与:empty是相反的，两者所涉及的子元素，包括文本节点<h4 id="u53EF_u89C1_u6027_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u53EF_u89C1_u6027_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="可见性筛选选择器"></a>可见性筛选选择器</h4></li>
+<li>:parent与:empty是相反的，两者所涉及的子元素，包括文本节点</li>
 </ul>
 </li>
+</ul>
+<h4 id="u53EF_u89C1_u6027_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u53EF_u89C1_u6027_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="可见性筛选选择器"></a><strong>可见性筛选选择器</strong></h4><ul>
 <li>元素有显示状态与隐藏状态，jQuery根据元素的状态扩展了可见性筛选选择器:visible与:hidden</li>
-<li><p>描述如下：</p>
-</li>
-<li><p>这2个选择器都是 jQuery 延伸出来的，看起来比较简单，但是元素可见性依赖于适用的样式</p>
-</li>
+<li>描述如下：<br><img src="http://img.mukewang.com/5590f6de0001e2b204460106.jpg" alt=""></li>
+<li>这2个选择器都是 jQuery 延伸出来的，看起来比较简单，但是元素可见性依赖于适用的样式</li>
 <li>:hidden选择器，不仅仅包含样式是display=”none”的元素，还包括隐藏表单、visibility等等</li>
 <li>我们有几种方式可以隐藏一个元素：<ul>
 <li>CSS display的值是none。</li>
@@ -325,12 +332,12 @@ id是唯一的，每个id值在一个页面中只能使用一次。如果多个"
 </ul>
 </li>
 <li>如果元素中占据文档中一定的空间,元素被认为是可见的。<br>可见元素的宽度或高度，是大于零。<br>元素的visibility: hidden 或 opacity: 0被认为是可见的，因为他们仍然占用空间布局。</li>
-<li>不在文档中的元素是被认为是不可见的，如果当他们被插入到文档中，jQuery没有办法知道他们是否是可见的，因为元素可见性依赖于适用的样式<h4 id="u5C5E_u6027_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u5C5E_u6027_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="属性筛选选择器"></a>属性筛选选择器</h4></li>
+<li>不在文档中的元素是被认为是不可见的，如果当他们被插入到文档中，jQuery没有办法知道他们是否是可见的，因为元素可见性依赖于适用的样式</li>
+</ul>
+<h4 id="u5C5E_u6027_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u5C5E_u6027_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="属性筛选选择器"></a><strong>属性筛选选择器</strong></h4><ul>
 <li>属性选择器可以基于属性来定位一个元素。可以只指定该元素的某个属性，这样所有使用该属性而不管它的值，这个元素都将被定位，也可以更加明确并定位在这些属性上使用特定值的元素，这就是属性选择器展示它们的威力的地方。</li>
-<li><p>描述如下：</p>
-</li>
-<li><p>浏览器支持：</p>
-<ul>
+<li>描述如下：<br><img src="http://img.mukewang.com/57d654200001c46507360560.jpg" alt=""></li>
+<li>浏览器支持：<ul>
 <li>[att=val]、[att]、[att|=val]、[att~=val]  属于CSS 2.1规范</li>
 <li>[ns|attr]、[att^=val]、[att*=val]、[att$=val] 属于CSS3规范</li>
 <li>[name!=”value”]  属于jQuery 扩展的选择器</li>
@@ -339,37 +346,39 @@ id是唯一的，每个id值在一个页面中只能使用一次。如果多个"
 <li>CSS选择器无论CSS2.1版本还是CSS3版本，IE7和IE8都支持，webkit、Gecko核心及Opera也都支持，只有IE6以下浏览器才不支持</li>
 <li>在这么多属性选择器中[attr=”value”]和[attr*=”value”]是最实用的<ul>
 <li>[attr=”value”]能帮我们定位不同类型的元素，特别是表单form元素的操作，比如说input[type=”text”],input[type=”checkbox”]等</li>
-<li>[attr*=”value”]能在网站中帮助我们匹配不同类型的文件<h4 id="u5B50_u5143_u7D20_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u5B50_u5143_u7D20_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="子元素筛选选择器"></a>子元素筛选选择器</h4></li>
+<li>[attr*=”value”]能在网站中帮助我们匹配不同类型的文件</li>
 </ul>
 </li>
+</ul>
+<h4 id="u5B50_u5143_u7D20_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u5B50_u5143_u7D20_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="子元素筛选选择器"></a><strong>子元素筛选选择器</strong></h4><ul>
 <li>子元素筛选选择器不常使用，其筛选规则比起其它的选择器稍微要复杂点</li>
-<li><p>子元素筛选选择器描述表：</p>
-</li>
-<li><p>注意事项：</p>
-<ul>
+<li>子元素筛选选择器描述表：<br><img src="http://img.mukewang.com/559105da0001301105960331.jpg" alt=""></li>
+<li>注意事项：<ul>
 <li>:first只匹配一个单独的元素，但是:first-child选择器可以匹配多个：即为每个父级元素匹配第一个子元素。这相当于:nth-child(1)</li>
 <li>:last 只匹配一个单独的元素， :last-child 选择器可以匹配多个元素：即，为每个父级元素匹配最后一个子元素</li>
 <li>如果子元素只有一个的话，:first-child与:last-child是同一个</li>
 <li>:only-child匹配某个元素是父元素中唯一的子元素，就是说当前子元素是父元素中唯一的元素，则匹配</li>
 <li>jQuery实现:nth-child(n)是严格来自CSS规范，所以n值是“索引”，也就是说，从1开始计数，:nth-child(index)从1开始的，而eq(index)是从0开始的</li>
-<li>nth-child(n) 与 :nth-last-child(n) 的区别前者是从前往后计算，后者从后往前计算<h4 id="u8868_u5355_u5143_u7D20_u9009_u62E9_u5668"><a href="#u8868_u5355_u5143_u7D20_u9009_u62E9_u5668" class="headerlink" title="表单元素选择器"></a>表单元素选择器</h4></li>
+<li>nth-child(n) 与 :nth-last-child(n) 的区别前者是从前往后计算，后者从后往前计算</li>
 </ul>
 </li>
+</ul>
+<h4 id="u8868_u5355_u5143_u7D20_u9009_u62E9_u5668"><a href="#u8868_u5355_u5143_u7D20_u9009_u62E9_u5668" class="headerlink" title="表单元素选择器"></a><strong>表单元素选择器</strong></h4><ul>
 <li>无论是提交还是传递数据，表单元素在动态交互页面的作用是非常重要的。jQuery中专门加入了表单选择器，从而能够极其方便地获取到某个类型的表单元素</li>
-<li><p>表单选择器的具体方法描述：</p>
-</li>
-<li><p>注意事项：</p>
-</li>
-<li>除了input筛选选择器，几乎每个表单类别筛选器都对应一个input元素的type值。大部分表单类别筛选器可以使用属性筛选器替换。比如 $(‘:password’) == $(‘[type=password]’)<h4 id="u8868_u5355_u5BF9_u8C61_u5C5E_u6027_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u8868_u5355_u5BF9_u8C61_u5C5E_u6027_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="表单对象属性筛选选择器"></a>表单对象属性筛选选择器</h4></li>
+<li>表单选择器的具体方法描述：<br><img src="http://img.mukewang.com/5592040d0001f8eb04940441.jpg" alt=""></li>
+<li>注意事项：</li>
+<li>除了input筛选选择器，几乎每个表单类别筛选器都对应一个input元素的type值。大部分表单类别筛选器可以使用属性筛选器替换。比如 <code>$(&#39;:password&#39;) == $(&#39;[type=password]&#39;)</code></li>
+</ul>
+<h4 id="u8868_u5355_u5BF9_u8C61_u5C5E_u6027_u7B5B_u9009_u9009_u62E9_u5668"><a href="#u8868_u5355_u5BF9_u8C61_u5C5E_u6027_u7B5B_u9009_u9009_u62E9_u5668" class="headerlink" title="表单对象属性筛选选择器"></a><strong>表单对象属性筛选选择器</strong></h4><ul>
 <li>除了表单元素选择器外，表单对象属性筛选选择器也是专门针对表单元素的选择器，可以附加在其他选择器的后面，主要功能是对所选择的表单元素进行筛选</li>
-<li><p>表单筛选选择器的描述：</p>
-</li>
-<li><p>注意事项：</p>
-<ul>
+<li>表单筛选选择器的描述：<br><img src="http://img.imooc.com/55920c2f0001198b04940201.jpg" alt=""></li>
+<li>注意事项：<ul>
 <li>选择器适用于复选框和单选框，对于下拉框元素, 使用 :selected 选择器</li>
-<li>在某些浏览器中，选择器:checked可能会错误选取到<option>元素，所以保险起见换用选择器input:checked，确保只会选取</option><input>元素<h4 id="u7279_u6B8A_u9009_u62E9_u5668this"><a href="#u7279_u6B8A_u9009_u62E9_u5668this" class="headerlink" title="特殊选择器this"></a>特殊选择器this</h4></li>
+<li>在某些浏览器中，选择器:checked可能会错误选取到 <code>&lt;option&gt;</code>元素，所以保险起见换用选择器input:checked，确保只会选取<code>&lt;input&gt;</code>元素</li>
 </ul>
 </li>
+</ul>
+<h4 id="u7279_u6B8A_u9009_u62E9_u5668this"><a href="#u7279_u6B8A_u9009_u62E9_u5668this" class="headerlink" title="特殊选择器this"></a><strong>特殊选择器this</strong></h4><ul>
 <li><p>$(this)和this的区别：</p>
 <ul>
 <li><p>this是JavaScript中的关键字，指的是当前的上下文对象，简单的说就是方法/属性的所有者</p>
@@ -392,7 +401,7 @@ id是唯一的，每个id值在一个页面中只能使用一次。如果多个"
 </li>
 </ul>
 </li>
-<li>总体：<br>this，表示当前的上下文对象是一个html对象，可以调用html对象所拥有的属性和方法。<br>\$(this),代表的上下文对象是一个jquery的上下文对象，可以调用jQuery的方法和属性值。</li>
+<li>总体：<br>this，表示当前的上下文对象是一个html对象，可以调用html对象所拥有的属性和方法。<br><code>$(this)</code>,代表的上下文对象是一个jquery的上下文对象，可以调用jQuery的方法和属性值。</li>
 </ul>
 
       
